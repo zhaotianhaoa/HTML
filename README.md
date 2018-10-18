@@ -2,10 +2,10 @@
 * 备注：这个工程总结了所有HTML的基本知识
 
 # HTML所有标签的英文中文对照表
-## <HTML>标签
+## '''html<HTML>'''标签
   * HTML - Hyper Text Markup Language:超级文本标记语言
   * HTML是网页语言的根元素,树形结构的最顶端。
 
-## <head>标签
+## '''html<head>''''标签
 
 
