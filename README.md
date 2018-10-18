@@ -17,7 +17,7 @@
   
 ## 5.```<link>``` -链接标签
   * 用于链接外部CSS样式 *
-```
+```html
 <link href="default.css" rel="stylesheet" title="Default Style">
 ```
 
