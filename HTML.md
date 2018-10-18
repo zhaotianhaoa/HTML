@@ -121,11 +121,12 @@
 </ul>
   ```
 ## 16.```<img>```-图片标签
-  * 
+  * image - 图像
   ```html
 <img src="my.jpeg">
   ```
 ## 17.```<video>```-视频标签
+  * video - 视频
   * HTML5 新增特性
   ```html
 <video src="foo.mp4">
@@ -148,13 +149,55 @@
   </tr>
 </table>
   ```
-## 19.``````-标签
-  * 
+## 19.```<form>```-表单标签
+  * form - 表单
+  * 表示了文档中的一个区域，这个区域包含有交互控制元件，用来向web服务器提交信息。
+  * input 输入
+  * label 标签
+  * type 类型
+  * submit 提交
   ```html
+<form action="">
+  <label for="GET-name">Name:</label>
+  <input id="GET-name" type="text" name="name">
+  <input type="submit" value="Save">
+</form>
   ```
-## 20.``````-标签
-  * 
+## 20.```<input>```-输入标签
+  * 能够输入的占位符
+  * type属性有几种：button（按钮）radio（单选框）checkbox（多选框）file（文件上传）password（密码输入框）submit（提交按钮）text（单纯文字）
   ```html
+<fieldset>
+    <legend>Input</legend>
+    <form>
+        <div>
+            <label for="display-name"> Name:
+                <span class="warning">*(Allows only letters.)</span> 
+            </label>
+            <input type="text" id="display-name" name="ip-display"
+                   pattern="[A-Za-z\s]+"
+                   maxlength="5" minlength="2" value="Aa" required />
+            <span></span>
+        </div>
+        <div>
+            <label for="readonly-ip">ReadOnly:</label>
+            <input type="text" id="readonly-ip" name="ip-readonly"
+                   placeholder="I'm read only." readonly />
+        </div>
+        <div>
+            <label for="disabled-ip">Disabled:</label>
+            <input type="text" name="ip-disabled"
+                   id="disabled-ip"
+                   value="I am disabled"
+                   disabled />
+        </div>
+        <div>
+            <input type="submit" class="submit" value="Submit" />
+        </div>
+        
+    </form>
+</fieldset>
+
   ```
 ## 7.``````-标签
   * 
