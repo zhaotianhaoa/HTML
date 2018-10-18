@@ -16,9 +16,18 @@
   * 代表 HTML 文档的内容。在网页中只能有一个 ```<body>``` 元素。
   
 ## 5.```<link>``` -链接标签
-  * 用于链接外部CSS样式 *
+  * 用于链接外部CSS（层叠样式表）, 例如链接index.css
 ```html
-<link href="default.css" rel="stylesheet" title="Default Style">
+  <link href="./index.css" rel="stylesheet">
 ```
 
+## 6.```<style>```-样式标签
+  * 用于链接内部CSS（层叠样式表）， 例如：
+```html
+  <style type="text/css">
+  body {
+    color:red;
+  }
+  </style>
+```
 
