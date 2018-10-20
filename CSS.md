@@ -10,21 +10,26 @@
 ```css
 .自定义样式{属性：值}
 ```
-* 定义事件发生属性的语法
+* 定义事件发生(也叫做伪类)属性的语法
 ```css
 选择器：事件{属性：值}
+selector:pseudo-element {property:value;}
 ```
-* 例如鼠标悬浮事件：
+** 例如鼠标悬浮事件：
 ```css
 a:hover{font-size:x-large}
 ```
-* 其他的类似的事件还有:
+** 其他的类似的事件还有:
 ```css
 a:link{color:#fff}  未访问时的状态（鼠标点击前显示的状态）
 a:hover{color:#fff}  鼠标悬停时的状态
 a:visited{color:#fff}  已访问过的状态（鼠标点击后的状态）
 a:active{color:#fff}  鼠标点击时的状态
 a:focus{color:#fff}  点击后鼠标移开保持鼠标点击时的状态（只有在<a href="#"></a>时标签中有效）
+a:link {color: #FF0000}		/* 未访问的链接 */
+a:visited {color: #00FF00}	/* 已访问的链接 */
+a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */
+a:active {color: #0000FF}	/* 选定的链接 */
 ```
     
 ### CSS选择器分组
@@ -41,6 +46,16 @@ h1,h2,h3,h4,h5,h6 {
 body .mycss h1{
     color:#ffffff
 } 
+```
+### CSS子元素选择器 >
+* 例如，如果您希望选择只作为 h1 元素子元素的 strong 元素，可以这样写：
+```css
+h1 > strong {color:red;}
+```
+### CSS兄弟选择器 +
+* 如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器+
+```css
+h1 + p {margin-top:50px;}
 ```
 ### id选择器
 * 开头用#代表id选择器
