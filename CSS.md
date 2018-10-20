@@ -89,11 +89,11 @@ h1{padding:10px 0.25em 2ex 20%;}
 上 右 下 左 ，先是上然后四个值顺时针转一圈
 ````
 # CSS定位 position属性
-    * 绝对定位 position: absolute 相对于网页页面的左上角来定位的
-    * 相对定位 position: relative 相对于某一个网页元素定位的
-    * 浮动定位 float：left,right,center
-    * http://www.w3school.com.cn/css/css_positioning.asp
-    position 属性值的含义：
+  * 绝对定位 position: absolute 相对于网页页面的左上角来定位的
+  * 相对定位 position: relative 相对于某一个网页元素定位的
+  * 浮动定位 float：left,right,center,inherit(继承父亲的float),none(不浮动)
+    http://www.w3school.com.cn/css/css_positioning.asp
+##### position 属性值的含义：
 * static
 元素框正常生成。块级元素生成一个矩形框，作为文档流的一部分，行内元素则会创建一个或多个行框，置于其父元素中。
 * relative
